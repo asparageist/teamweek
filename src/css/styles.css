@@ -1,0 +1,152 @@
+body {
+  font-family: 'BloggerSansBold';
+  text-align: center;
+  background: radial-gradient(ellipse at 75% 10%, white, lightblue, blue);
+}
+
+.titlecard {
+  margin-left: 25%;
+  font-size: 90px;
+  color: darkgreen;
+  /* -webkit-text-stroke: 8px darkgreen; */
+}
+
+.container {
+  margin-bottom: 10%;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; 
+}
+
+#leafTitle, #autoWeather {
+  font-size: x-large;
+  margin: 10px;
+  color: black;
+}
+
+#result-area img {
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 25%;
+  margin: 10px;
+  box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
+}
+
+#problem-area {
+  text-align: center;
+  padding: 20%;
+}
+
+#result-area {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.search-field, #search-btn, #place-order-btn, #location-btn, #plant-name, #image-input, #disease-name, #search-plant--btn, #submit-button, #search-disease-btn, #img-gen-plant-name {
+  color: black;
+  border-radius: 3px;
+  border: 2px solid black;
+  margin: 5px;
+  background-color: darkgreen;
+  display: inline-block;
+  padding: 0px 2px;
+  place-items: center;
+}
+
+#shopping-btn {
+  color: black;
+  border-radius: 3px;
+  border: 2px solid green;
+  margin-top: 40px;
+  background-color: green;
+  display: inline-block;
+  padding: 0px 2px;
+  place-items: center;
+}
+
+#shopping-btn:hover {
+  color: darkgreen;
+  border: 2px solid darkgreen;
+  border-radius: 5px solid darkgreen;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]::placeholder {
+  color: green;
+}
+
+.search-field:hover, #search-btn:hover, #place-order-btn:hover, #location-btn:hover, #search-plant--btn:hover, #submit-button:hover, #search-disease-btn:hover, #img-gen-plant-name:hover {
+  background-color: green;
+  transition: all 0.2s ease;
+}
+
+.search-field:focus, #plant-name:focus, #image-input:focus, #disease-name:focus {
+  background-color: green;
+  transition: all 0.2s ease;
+}
+
+.leaf {
+  margin-left: 10%;
+  width: 250px;
+  height: 150px;
+  background-color: green;
+  border: 3px solid green;
+  border-width: 0 0 18px 18px;
+  border-color: green green darkgreen darkgreen;
+  border-radius: 80px 0 80px 0;
+  position: relative;
+  transform: rotate(-25deg);
+  overflow: hidden;
+  box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
+}
+
+.leaf2 {
+  width: 250px;
+  height: 150px;
+  background-color: green;
+  border: 3px solid green;
+  border-width: 0 0 18px 18px;
+  border-color: green green darkgreen darkgreen;
+  border-radius: 0 80px 0 80px;
+  position: relative;
+  transform: rotate(25deg);
+  overflow: hidden;
+  box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
+}
+
+.leaf2:hover {
+transform: rotate(20deg);
+transition: all 0.4s ease;
+}
+
+.leaf:hover {
+transform: rotate(-20deg);
+transition: all 0.4s ease;
+}
+
+#order-form {
+  margin-top: 5%;
+}
+
+input[type='number']{
+  width: 80px;
+} 
+
+.hidden {
+  display: none;
+}
+
+#result-area {
+  float: right;
+  margin-right: 5%;
+  width: 65%;
+  height: 80%;
+  background-color: green;
+  border: 3px solid green;
+  border-width: 0 0 18px 18px;
+  border-color: green green darkgreen darkgreen;
+  border-radius: 80px 0 80px 0;
+  position: relative;
+  overflow: scroll;
+  box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
+}

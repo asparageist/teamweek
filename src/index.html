@@ -1,0 +1,190 @@
+<html lang="en-US">
+  <link
+    rel="stylesheet"
+    media="screen"
+    href="https://fontlibrary.org//face/blogger-sans-bold-otf"
+    type="text/css"
+  />
+
+  <head>
+    <title>Plant Freak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="titlecard"><span>&#127793;</span> PLANT FREAK</h1>
+      <div id="result-area">
+        <!-- <div id="img-gen">
+        <form>
+          <label>Get Info On:</label>
+          <button type="submit" id="img-gen-plant-name"></button>
+        </form>
+      </div> -->
+        <div id="problem-area"></div>
+        <form id="order-form" class="hidden">
+          <!-- shopping html & display area -->
+          <fieldset>
+            <legend>Select Plant Types:</legend>
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="flower"
+              class="checkbox"
+            />
+            Flower
+            <input
+              type="number"
+              name="quantity-flower"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="tree"
+              class="checkbox"
+            />
+            Tree
+            <input
+              type="number"
+              name="quantity-tree"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="fruit-tree"
+              class="checkbox"
+            />
+            Fruit Tree
+            <input
+              type="number"
+              name="quantity-fruit-tree"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="shrub"
+              class="checkbox"
+            />
+            Shrub
+            <input
+              type="number"
+              name="quantity-shrub"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="vegetable-seeds"
+              class="checkbox"
+            />
+            Vegetable Seeds
+            <input
+              type="number"
+              name="quantity-vegetable-seeds"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="squash-seeds"
+              class="checkbox"
+            />
+            Squash Seeds
+            <input
+              type="number"
+              name="quantity-squash-seeds"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="flower-starts"
+              class="checkbox"
+            />
+            Flower Starts
+            <input
+              type="number"
+              name="quantity-flower-starts"
+              value="0"
+              class="search-field"
+            /><br />
+            <input
+              type="checkbox"
+              name="plant-type"
+              value="veggie-starts"
+              class="checkbox"
+            />
+            Veggie Starts
+            <input
+              type="number"
+              name="quantity-veggie-starts"
+              value="0"
+              class="search-field"
+            /><br />
+          </fieldset>
+          <br />
+          <button type="button" id="place-order-btn">Place Order</button>
+        </form>
+        <br />
+        <div id="receipt" class="hidden">
+          <h2>Order Receipt</h2>
+          <div id="order-details"></div>
+          <div id="total-cost"></div>
+          <div id="tax-amount"></div>
+          <div id="total-with-tax"></div>
+        </div>
+      </div>
+      <div class="leaf">
+        <h2 id="leafTitle">Plant Name</h2>
+        <!-- plant finder html -->
+        <form id="textForm">
+          <input type="text" id="plant-name" placeholder="Enter Plant Name" />
+          <button type="submit" id="search-plant--btn">Search Plant</button>
+        </form>
+      </div>
+      <div class="leaf2">
+        <!-- image finder html -->
+        <h4 id="leafTitle">Plant Image URL:</h4>
+        <form id="imageForm">
+          <input
+            type="text"
+            id="image-input"
+            placeholder="Enter Plant Image URL"
+          />
+          <button type="submit" id="submit-button">Identify Plant</button>
+        </form>
+      </div>
+      <div class="leaf">
+        <!-- disease finder html -->
+        <h2 id="leafTitle">Plant Probs?</h2>
+        <form id="diseaseForm">
+          <input
+            type="text"
+            class="search-field"
+            id="disease-name"
+            placeholder="Enter Disease Name"
+          />
+          <button type="submit" id="search-disease-btn">Search Disease</button>
+        </form>
+      </div>
+      <div class="leaf2">
+        <!-- weather html -->
+        <h2 id="autoWeather">Weather</h2>
+      </div>
+      <div class="leaf">
+        <button id="shopping-btn">
+          <h1>Shopping</h1>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
