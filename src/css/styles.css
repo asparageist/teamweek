@@ -5,20 +5,22 @@ body {
 }
 
 .titlecard {
-  margin-left: 25%;
+  margin-left: 30%;
   font-size: 90px;
   color: darkgreen;
-  /* -webkit-text-stroke: 8px darkgreen; */
+  -webkit-text-stroke: 3px black;
+  text-shadow: rgba(10, 10, 10, 0.5) 5px 5px 10px;
 }
 
 .container {
   margin-bottom: 10%;
   justify-content: flex-start;
   align-items: center;
-  position: relative; 
+  position: relative;
 }
 
-#leafTitle, #autoWeather {
+#leafTitle,
+#autoWeather {
   font-size: x-large;
   margin: 10px;
   color: black;
@@ -32,17 +34,30 @@ body {
   box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
 }
 
+#result-area button {
+  box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
+}
+
 #problem-area {
+  color: black;
+  font-size: larger;
   text-align: center;
-  padding: 20%;
+  padding-top: 20%;
+  padding-left: 15%;
+  width: 80%;
 }
 
-#result-area {
-  font-size: 20px;
-  padding-top: 20px;
-}
-
-.search-field, #search-btn, #place-order-btn, #location-btn, #plant-name, #image-input, #disease-name, #search-plant--btn, #submit-button, #search-disease-btn, #img-gen-plant-name {
+.search-field,
+#search-btn,
+#place-order-btn,
+#location-btn,
+#plant-name,
+#image-input,
+#disease-name,
+#search-plant--btn,
+#submit-button,
+#search-disease-btn,
+#img-gen-plant-name {
   color: black;
   border-radius: 3px;
   border: 2px solid black;
@@ -53,7 +68,8 @@ body {
   place-items: center;
 }
 
-#shopping-btn {
+#shopping-btn,
+#about-btn {
   color: black;
   border-radius: 3px;
   border: 2px solid green;
@@ -64,7 +80,8 @@ body {
   place-items: center;
 }
 
-#shopping-btn:hover {
+#shopping-btn:hover,
+#about-btn:hover {
   color: darkgreen;
   border: 2px solid darkgreen;
   border-radius: 5px solid darkgreen;
@@ -72,15 +89,26 @@ body {
 }
 
 input[type="text"]::placeholder {
+  text-align: center;
   color: green;
 }
 
-.search-field:hover, #search-btn:hover, #place-order-btn:hover, #location-btn:hover, #search-plant--btn:hover, #submit-button:hover, #search-disease-btn:hover, #img-gen-plant-name:hover {
+.search-field:hover,
+#search-btn:hover,
+#place-order-btn:hover,
+#location-btn:hover,
+#search-plant--btn:hover,
+#submit-button:hover,
+#search-disease-btn:hover,
+#img-gen-plant-name:hover {
   background-color: green;
   transition: all 0.2s ease;
 }
 
-.search-field:focus, #plant-name:focus, #image-input:focus, #disease-name:focus {
+.search-field:focus,
+#plant-name:focus,
+#image-input:focus,
+#disease-name:focus {
   background-color: green;
   transition: all 0.2s ease;
 }
@@ -88,7 +116,7 @@ input[type="text"]::placeholder {
 .leaf {
   margin-left: 10%;
   width: 250px;
-  height: 150px;
+  height: 180px;
   background-color: green;
   border: 3px solid green;
   border-width: 0 0 18px 18px;
@@ -102,7 +130,7 @@ input[type="text"]::placeholder {
 
 .leaf2 {
   width: 250px;
-  height: 150px;
+  height: 180px;
   background-color: green;
   border: 3px solid green;
   border-width: 0 0 18px 18px;
@@ -115,32 +143,49 @@ input[type="text"]::placeholder {
 }
 
 .leaf2:hover {
-transform: rotate(20deg);
-transition: all 0.4s ease;
+  transform: rotate(20deg);
+  transition: all 0.4s ease;
 }
 
 .leaf:hover {
-transform: rotate(-20deg);
-transition: all 0.4s ease;
+  transform: rotate(-20deg);
+  transition: all 0.4s ease;
+}
+
+.leaf h2,
+.leaf2 h2 {
+  padding-top: 15px;
+}
+
+#autoWeather {
+  font-size: large;
+}
+
+#about-btn,
+#shopping-btn {
+  padding-top: 15px;
 }
 
 #order-form {
   margin-top: 5%;
 }
 
-input[type='number']{
+input[type='number'] {
   width: 80px;
-} 
+}
 
 .hidden {
   display: none;
 }
 
 #result-area {
+  font-size: 20px;
+  padding-top: 20px;
+  color: black;
   float: right;
-  margin-right: 5%;
+  margin-right: 0%;
   width: 65%;
-  height: 80%;
+  height: 120%;
   background-color: green;
   border: 3px solid green;
   border-width: 0 0 18px 18px;
@@ -149,4 +194,13 @@ input[type='number']{
   position: relative;
   overflow: scroll;
   box-shadow: rgba(10, 10, 10, 0.35) 10px 15px 15px;
+  z-index: 0;
+}
+
+.img-float {
+  color: black;
+  z-index: 1;
+  padding-left: 20%;
+  position: relative;
+  bottom: 500px;
 }

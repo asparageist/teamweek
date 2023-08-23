@@ -6,7 +6,7 @@ export default class WeatherService {
         navigator.geolocation.getCurrentPosition((position) => {
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
-          const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=bd9f598b5f654c407cc0f903fa3ad97a`;
+          const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.API_KEY_2}`;
           let request = new XMLHttpRequest();
           request.addEventListener("loadend", function() {
             const response = JSON.parse(this.responseText);
