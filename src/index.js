@@ -78,6 +78,7 @@ function diseaseInfo(response, diseaseName) {
   document.getElementById("about").setAttribute("class", "hidden");
   document.getElementById("plant-info").setAttribute("class", "hidden");
   document.getElementById("receipt").setAttribute("class", "hidden");
+  document.getElementById("img-gen").setAttribute("class", "hidden");
   document.getElementById("problem-area").innerText = `Here's a little about ${diseaseName}: ${response.data[0].description[0].description}`;
 }
 
@@ -88,6 +89,7 @@ function printError(error) {
   document.getElementById("plant-info").setAttribute("class", "hidden");
   document.getElementById("problem-area").setAttribute("class", "hidden");
   document.getElementById("error-area").removeAttribute("class");
+  document.getElementById("img-gen").setAttribute("class", "hidden");
   document.getElementById("error-area").innerText = `There was an error accessing data: ${error}`;
 }
 
@@ -125,6 +127,7 @@ function aboutUsHandleForm(event) {
   document.getElementById("order-form").setAttribute("class", "hidden");
   document.getElementById("about").removeAttribute("class");
   document.getElementById("receipt").setAttribute("class", "hidden");
+  document.getElementById("img-gen").setAttribute("class", "hidden");
 }
 
 //UI for plant-img-service
@@ -162,6 +165,7 @@ window.addEventListener("load", function () {
   document.getElementById("diseaseForm").addEventListener("submit", handleDiseaseForm);
   document.getElementById("about-us").addEventListener("submit", aboutUsHandleForm);
   document.getElementById("receipt").addEventListener("submit", aboutUsHandleForm);
+  document.getElementById("img-gen").setAttribute("class", "hidden");
 });
 
 // UI logic for seed-catalog
@@ -226,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("plant-img").setAttribute("class", "hidden");
     document.getElementById("problem-area").setAttribute("class", "hidden");
     document.getElementById("receipt").setAttribute("class", "hidden");
+    document.getElementById("img-gen").setAttribute("class", "hidden");
     const orderForm = document.getElementById('order-form');
     orderForm.classList.remove('hidden');
   });
